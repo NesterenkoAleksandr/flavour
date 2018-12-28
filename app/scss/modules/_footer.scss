@@ -1,0 +1,29 @@
+footer {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: $gray-15;
+}
+
+footer .social-list{
+    list-style: none;
+    display: flex;
+}
+
+footer .social-list li {
+    margin: 0 15px;
+}
+
+footer .social-list li i.fa {
+    cursor: pointer;
+    font-size: 1.625rem;
+    padding: 4px;
+    color: $primary;
+    transition: all 0.3s;
+}
+footer .copyrights {
+    margin-top: 15px;
+}
+
+footer .social-list li i.fa:hover {
+    color: $white;
+}

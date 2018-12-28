@@ -1,0 +1,61 @@
+/*Typography*/
+body, html {
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    color: $gray-40;
+    font-weight: $font-weight-normal;
+    width: 100% !important;
+    height: 100% !important;
+    box-sizing: border-box;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Montez', cursive;
+    color: $white;
+    font-size: 85px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+@media(min-width: 576px) {
+    h1 {
+        font-size: 150px;
+    }
+}
+
+h2 {
+    position: relative;
+    margin: 0 0 50px 0;
+    // font-weight: $font-weight-light;
+    font-size: $h2-font-size;
+    color: $gray-40;
+}
+
+h2:after,
+h3:after {
+    position: absolute;
+    content: "";
+    background: $primary;
+    height: 2px;
+    width: 70px;
+    bottom: -20px;
+    margin-left: -35px;
+    left: 50%;
+}
+
+h3 {
+    position: relative;
+    font-weight: $font-weight-normal;
+    font-size: $h3-font-size;
+    margin-bottom: 20px;
+}
+
+.overflow {
+    overflow: hidden;
+}

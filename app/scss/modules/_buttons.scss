@@ -1,0 +1,49 @@
+.button-group {
+    padding: 15px 15px;
+}
+
+.btn-link {
+    border: none;
+    cursor: pointer;
+    color: $approx-gray;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 15px 15px;
+    border-radius: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-link.is-checked,
+.btn-link:hover{
+    color: $primary;
+    outline: none;
+}
+
+/*---To Top button---*/
+.totop-button{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 20px solid $silver;
+	z-index: 1000;
+	transition: .3s;
+	border-radius: 3px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.totop-button:hover{
+	cursor: pointer;
+	border-bottom-color: $approx-black;
+}
+
+.totop-button.show{
+	opacity: 1;
+	visibility: visible;
+}

@@ -1,0 +1,63 @@
+.header-overlay {
+	position: relative;
+	background-image: url(../img/intro-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
+.header-wrapper{
+	height: 100vh;
+	background:rgba(0,0,0, 0.65);
+}
+
+.header-wrapper .container {
+	height: 100%;
+}
+
+.header-wrapper h1 {
+    padding-top: 70px;
+}
+
+.header-wrapper span {
+    color: $white;
+    font-size: 2.375rem;    
+    font-weight: $font-weight-normal;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.header-wrapper p {
+    color: rgba(255,255,255,0.85);
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    margin-bottom: 40px;
+}
+
+.header-wrapper .btn-custom {
+    text-transform: uppercase;
+    color: rgba(255,255,255,.8);
+    background-color: #a18530;
+    border-top: 4px solid $primary;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding: 14px 20px;
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    border-radius: 0;
+    margin-top: 20px;
+    transition: all 0.3s;
+    text-decoration-line: none;
+}
+
+.header-wrapper .btn-custom:hover {
+    color: $primary;
+    background-color: $white;
+    border-top: 4px solid $primary;
+    border-left: 2px solid $primary;
+    border-right: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+}

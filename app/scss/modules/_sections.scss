@@ -1,0 +1,265 @@
+// Start section About styles
+#about {
+    position: relative;
+    padding: 120px 0;
+    background: $white-smoke;
+}
+
+@media(min-width: 768px) {
+    #about h2.underline-left:after {
+        position: absolute;
+        content: "";
+        background: $primary;
+        height: 2px;
+        width: 70px;
+        bottom: -20px;
+        left: 0;
+        margin-left: 0;    
+    }
+
+    #about h2.underline-right:after {
+        position: absolute;
+        content: "";
+        background: $primary;
+        height: 2px;
+        width: 70px;
+        bottom: -20px;
+        left: inherit;
+        right: 0; 
+        margin-right: 0;
+    }
+}
+
+#about .left-img {
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-top: 5%;
+    box-shadow: -20px -20px 40px -10px rgba(0, 0, 0, 0.1);
+}
+
+#about .right-img {
+    margin: 0 auto;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    box-shadow: 20px 20px 40px -10px rgba(0, 0, 0, 0.1);
+}
+// End section About styles
+
+// Start section Menu styles
+#menu .bg-img {
+    background: $charcoal url(../img/menu-bg.jpg) bottom center no-repeat fixed;
+    background-size: cover;
+}
+
+#menu .overlay {
+    padding: 100px 0;
+    margin: 0 -15px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#menu .nav-tabs {
+    margin-bottom: 80px;
+    text-align: center;
+    border: none;
+}
+
+#menu .nav-tabs .nav-link {
+    font-weight: $font-weight-normal;
+    text-transform: uppercase;
+    color: $nero;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+#menu .nav-tabs .nav-link.active,
+#menu .nav-tabs .nav-link:hover {
+   border-bottom: 2px solid $primary;
+}
+
+
+#menu .menu-list {
+    margin: 70px 0;
+}
+
+#menu .menu-item {
+    margin: 45px 0;
+    font-size: 18px;
+}
+
+#menu .menu-item-name {
+    font-weight: $font-weight-normal;
+    font-size: 1.125rem;
+    color: $davys-grey;
+    padding-bottom: 15px;
+    border-bottom: 2px dotted rgba(0,0,0,0.15);
+}
+
+#menu .menu-item-price {
+    float: right;
+    font-weight: $font-weight-normal;
+    color: $davys-grey;
+    margin-top: -40px;
+}
+
+#menu .menu-item-description {
+    padding-top: 10px;
+    font-style: italic;
+    font-size: 0.9375rem;
+}
+
+#menu h2 {
+    color: $gainsboro;
+}
+
+#menu p {
+    color: rgba(255,255,255,0.75);
+    padding: 0 20px;
+}
+// End section Menu styles
+
+// Start section Team styles
+#team {
+    padding: 120px 0 80px 0;
+}
+
+#team .card .card-body img {
+    min-height: 503px;
+    margin-bottom: 20px;
+}
+
+#team .card .card-body h2 {
+    margin-bottom: 10px;
+}
+
+#team h2 + p {
+    margin-bottom: 60px;
+}
+
+#team .card {
+    border: none;
+}
+// End section Team styles
+
+// Start section Reservation styles
+#reservation {
+    background: $charcoal url(../img/reservation-bg.jpg) bottom center no-repeat fixed;
+    background-size: cover;
+}
+
+#reservation .overlay {
+    font-size: 42px;
+    font-weight: $font-weight-light;
+    padding: 100px 0;
+    margin: 0 -15px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#reservation span {
+    color: rgba(255,255,255,0.75);
+    padding: 0 20px;
+    margin: 0 0 20px 0;
+}
+
+#reservation span + a{
+    color: $primary;
+    text-decoration: none;
+    padding: 0 20px;
+}
+// End section reservation styles
+
+// Start section Contact styles
+#contact {
+    padding-bottom: 60px;
+    background: $white-smoke;
+}
+
+#contact .contacts-container {
+    padding: 50px 0 0 0;
+}
+
+#contact p {
+    font-size: 0.9375rem;
+}
+
+#contact .contact-item {
+    margin-top: 40px;
+}
+
+#contact .contact-item a{
+    color: inherit;
+}
+
+#contact .contact-item a:hover{
+    color: $primary;
+}
+// End section Contact styles
+
+// Start section Gallery styles
+#gallery {
+    padding: 120px 0;
+    background: $approx-nero;
+}
+
+#gallery h2 {
+    color: $white;
+}
+
+#gallery p {
+    font-size: 1.125rem;
+    color: $approx-gray;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#gallery .grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+#gallery .grid-sizer,
+#gallery .grid-item { 
+    width: 100%; 
+}
+
+@media(min-width: 576px) {
+    #gallery .grid-sizer,
+    #gallery .grid-item { 
+        width: 50%; 
+    }
+}
+
+@media(min-width: 768px) {
+    #gallery .grid-sizer,
+    #gallery .grid-item { 
+        width: 33.3333%; 
+    }
+}
+
+@media(min-width: 992px) {
+    #gallery .grid-sizer,
+    #gallery .grid-item { 
+        width: 25%; 
+    }
+}
+
+#gallery .grid .grid-item img{
+    cursor: pointer;
+    transition: all 0.5s ease-out;   
+}
+
+#gallery .grid .grid-item img:hover{
+    transform: scale(1.1);
+}
+
+#image-gallery .modal-dialog {
+    width: auto;
+    height: 90%;
+}
+// End section Gallery styles
+
+// Start section Map styles
+#map {
+    height: 100%;
+    min-height: 500px;
+}
+// End section Map styles

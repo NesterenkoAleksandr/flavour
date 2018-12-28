@@ -1,0 +1,42 @@
+// Color system
+$primary: #ccad52;
+$white: #ffffff;
+$nero: #151515;
+$gray-40: #666666;
+$gray-15: #262626;
+$white-smoke: #f6f6f6;
+$charcoal: #444444;
+$davys-grey: #555555;
+$gainsboro: #dddddd;
+$approx-nero: #222222;
+$approx-gray: #888888;
+$approx-black: #111111;
+$silver: #c6c6c6;
+
+// Fonts
+$font-family-sans-serif: 'Roboto', sans-serif;
+$h1-font-size: 85px;
+$h2-font-size: 42px;
+$h3-font-size: 20px;
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+$spacer: 1rem !default;
+$spacers: () !default;
+
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    70: 70px
+  ),
+  $spacers
+);
+
