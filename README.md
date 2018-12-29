@@ -1,1 +1,1 @@
-https://nesterenkoaleksandr.github.io/flavour/app/index.html
+https://nesterenkoaleksandr.github.io/flavour/dist/index.html
